@@ -34,7 +34,7 @@ h2{
 
 ul{
     display: block;
-
+    text-align: center;
 }
 
 li{
@@ -43,11 +43,11 @@ li{
 }
 
 .photo{
-    width: 200px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
-    
+    width: 200px;
+    border-radius: 100px;
+    border: 10px #BDA897;
 
 }
