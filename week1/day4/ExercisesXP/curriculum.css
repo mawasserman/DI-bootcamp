@@ -1,0 +1,35 @@
+body{
+    background-color: rgb(218, 218, 216); 
+    color: slategray;
+    margin: 0%;
+}
+
+header{
+    display: relative;
+    background-size: cover;
+    padding: 0px;
+}
+
+nav{
+    background-color: rgb(189, 168, 151);
+    display: block;
+    height: 30px
+}
+
+.contact{
+    float:right
+}
+
+h1{
+    text-align: center;
+    font-size: 3em;
+}
+
+h2{
+    text-align: center;
+    font-size: 0.9em;
+}
+
+ul{
+
+}
