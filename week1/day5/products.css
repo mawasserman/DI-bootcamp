@@ -39,4 +39,14 @@ footer {
   height: 53px;
 }
 
-/* Everything up is the same in all files
+/* Everything up is the same in all files*/
+
+.product {
+   height: 250px
+}
+
+.photo {
+    width: 50%;
+    height: 50%;
+    display: inline-block;
+}
