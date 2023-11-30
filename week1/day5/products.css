@@ -1,0 +1,42 @@
+body{
+    position: relative;
+    margin: 0px;
+    font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+nav{
+    background-color: black;
+    display: block;
+    height: 50px;
+}
+
+nav a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    float: right;
+    margin: 14px;
+}
+
+a:hover {
+    color: darkred;
+}
+
+nav i{
+
+    float: left;
+    margin: 21px; 
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  height: 53px;
+}
+
+/* Everything up is the same in all files
