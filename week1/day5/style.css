@@ -1,0 +1,30 @@
+body{
+    position: relative;
+    margin: 0px;
+    font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+nav{
+    background-color: black;
+    display: block;
+    height: 50px;
+}
+
+nav a{
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    float: right;
+    margin: 14px;
+}
+
+a:hover {
+    color: darkred;
+}
+
+nav i{
+    display: inline-block;
+    float: left;
+    margin: 21px; 
+}
