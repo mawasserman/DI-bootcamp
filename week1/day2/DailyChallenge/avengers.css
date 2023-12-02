@@ -1,0 +1,55 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    /* add depois google fonts para ficar igual */
+    color: white;
+}
+
+header{
+    background-image: url(https://user-images.githubusercontent.com/30896388/168069577-2f570d08-61d3-49d8-b7dd-c4b9192aaf68.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative; /*tem que colocar isso por causa do position absolute do content, pq o position absolute tem que ser ligado a algo que não está com o position static (que é o default) */ 
+}
+
+nav{
+    background-color: black;
+    height: 10vh;
+    padding: 7px;
+}
+
+.logo{
+    height: 8vh;
+}
+
+ul{
+    float: right;
+}
+
+li{
+    display: inline-block;
+    font-weight: bold;
+    list-style-type: none;
+    margin: 7px 30px;
+}
+
+h1{
+    font-size: 5vw;
+}
+
+p{
+    font-size: 1vw;
+}
+
+.content{
+    width: 40vw;
+    /*uma possibilidade pra posicionar onde a gente quer o texto, mas que não vamos usar é usando padding como abaixo
+    padding-left: 10%;
+    padding-top: 10% ;*/
+
+    /*com a solução de cima as coisas ficavam mudando o tempo todo, então fica melhor usar posição absoluta, é em relação ao header, que é o parent dele*/
+    position: absolute;
+    top: 40%;
+    left: 15%;
+}
