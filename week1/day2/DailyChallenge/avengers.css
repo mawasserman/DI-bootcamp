@@ -53,3 +53,7 @@ p{
     top: 40%;
     left: 15%;
 }
+
+li:hover{
+    color: blueviolet;
+}
