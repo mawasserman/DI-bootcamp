@@ -1,0 +1,21 @@
+
+
+
+
+
+.icons {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+  }
+  
+  .icons:hover {
+    border: 1px solid #777;
+  }
+  
+  .icons img {
+    width: 100%;
+    height: auto;
+  }
+  
