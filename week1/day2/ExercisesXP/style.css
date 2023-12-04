@@ -1,61 +1,60 @@
-body{
-    background-color: rgb(209, 188, 180);
-    font-family: Arial, Helvetica, sans-serif;
-    position: relative;
-    margin: 0px 20%;
+body {
+  background-color: rgb(209, 188, 180);
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  margin: 0px 20%;
 }
 
-h1{
-    font-variant: small-caps;
-    font-size: 2.5em;
-    
+h1 {
+  font-variant: small-caps;
+  font-size: 2.5em;
 }
 
-.list1{
-    position: relative;
-    margin: 0px 10%;
+.list1 {
+  position: relative;
+  margin: 0px 10%;
 }
 
-h4{
-    text-align: center;
+h4 {
+  text-align: center;
 }
 
 img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    width: 50%;
-    transition: all 1s;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  width: 50%;
+  transition: all 1s;
 }
 
 img:hover {
-    transform: scale(1.7);
+  transform: scale(1.7);
 }
 
-footer{
-    text-align: center;
-    display: block;
-    margin: 0%;
-    padding: 3px;
-    background-color: DarkSalmon;
-    color: white;
+footer {
+  text-align: center;
+  display: block;
+  margin: 0%;
+  padding: 3px;
+  background-color: DarkSalmon;
+  color: white;
 }
 
-.tablediv{
-    margin: 5%;
-    text-align: center;
+.tablediv {
+  margin: 5%;
+  text-align: center;
 }
 
-.tablediv p{
-    border: 1px solid red;
-    color: red;
+.tablediv p {
+  border: 1px solid red;
+  color: red;
 }
 
-.tablediv table, th, td{
-    border: 1px solid black;
-    border-collapse: collapse;
+.tablediv table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
 }
-
-

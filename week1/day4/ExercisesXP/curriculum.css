@@ -1,53 +1,82 @@
-body{
-    background-color: rgb(218, 218, 216); 
-    color: slategray;
-    margin: 0%;
+body {
+  background-color: rgb(218, 218, 216);
+  color: slategray;
+  margin: 0%;
+  position: relative;
 }
 
-header{
-    display: relative;
-    background-size: cover;
-    padding: 0px;
+header {
+  display: relative;
+  background-size: cover;
+  padding: 0px;
 }
 
-nav{
-    background-color: rgb(189, 168, 151);
-    display: block;
-    height: 30px
+nav {
+  background-color: rgb(189, 168, 151);
+  display: block;
+  height: 30px;
 }
 
-.contact{
-    float:right
+.contact {
+  float: right;
+}
+header ul {
+  display: block;
+  text-align: center;
 }
 
-h1{
-    text-align: center;
-    font-size: 3em;
-    margin-bottom: 0px;
+header li {
+  display: inline-block;
+  list-style-type: none;
+}
+main {
+  flex-wrap: wrap;
 }
 
-h2{
-    text-align: center;
-    font-size: 0.9em;
-    margin: 0px;
+h1 {
+  text-align: center;
+  font-size: 3em;
+  margin-bottom: 0px;
 }
 
-ul{
-    display: block;
-    text-align: center;
+h2 {
+  text-align: center;
+  font-size: 0.9em;
+  margin: 0px;
 }
 
-li{
-    display: inline-block;
-    list-style-type: none;
+@media screen and (max-width: 600px) {
+  .collum {
+    width: 100%;
+  }
 }
 
-.photo{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 200px;
-    border-radius: 100px;
-    border: 10px #BDA897;
+@media screen and (min-width: 601px) {
+  .one {
+    width: 25%;
+    float: left;
+  }
+  .two {
+    width: 75%;
+    float: right;
+  }
+}
 
+.photo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  border-radius: 100px;
+  border: 10px #bda897;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(189, 168, 151);
+  color: white;
+  text-align: center;
 }
