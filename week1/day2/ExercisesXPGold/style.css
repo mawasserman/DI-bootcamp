@@ -1,21 +1,77 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px; 
+  background-image: url("background.jpg"); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
 
+nav{
+  background-color: white;
+  height: 7vh;
+  padding: 7px;
+  position: relative;
+  text-align: center;
+  
 
+}
 
+span{
+  float: left;
+  font-size: 4vh;
+  margin-left: 10vw;
+  margin-top: 0.5vh;
+  text-decoration: none;
+  color: black;
+  padding: 1vh;
+}
 
+a {
+  float: right;
+  font-size: 4vh;
+  margin-right: 10vw;
+  margin-top: 0.5vh;
+  text-decoration: none;
+  color: white;
+  background-color: #0a73fe;
+  padding: 1vh;
+  border-radius: 12%;
+
+}
+
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.banner{
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  text-align: center;
+}
+
+h1{
+  color: white;
+  text-shadow: 1px 1px 2px black
+
+}
 
 .icons {
-    margin: 5px;
-    border: 1px solid #ccc;
-    float: left;
-    width: 180px;
-  }
+  background-color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border: 1px solid red;
+}
+
+div {
+  display: inline-block;
+  width: 25%;
+  text-align: center;
+  align-items: center;
+  padding: 3vh 4vw;
   
-  .icons:hover {
-    border: 1px solid #777;
-  }
-  
-  .icons img {
-    width: 100%;
-    height: auto;
-  }
-  
+}

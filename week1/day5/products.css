@@ -41,12 +41,6 @@ footer {
 
 /* Everything up is the same in all files*/
 
-.product {
-   height: 250px
-}
-
-.photo {
-    width: 50%;
-    height: 50%;
-    display: inline-block;
+img {
+    width: 200px;
 }
