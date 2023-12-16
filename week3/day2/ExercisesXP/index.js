@@ -66,4 +66,38 @@ console.log(celcius+ "°C is " + ((celcius/5)*9)+32 + "°F.");
 // Hint : Should you create another variable to hold the temperature in fahrenheit? (ie. point 2)
 // Hint: To convert a temperature from celsius to fahrenheit : Divide it by 5, then multiply it by 9, then add 32
 
+// Exercise 4 : Guess The Answers #1
+// Instructions
+// For each expression, predict what you think the output will be in a comment (//) without first running the command.
+// Of course, explain each prediction.
+// Then run the expression in the console. Note the actual output in a comment and compare it with your prediction.
 
+// For example
+
+// console.log(2+3)
+// Prediction: It will output 5, because 2 and 3 are numbers
+// Actual: 5
+
+// Using the code below:
+
+//     let c;
+//     let a = 34;
+//     let b = 21;
+
+//     console.log(a+b) //first expression
+    // Prediction: 55 because 34+21 is 55 and they are numbers
+    // Actual: 55
+
+//     a = 2;
+
+    // console.log(a+b) //second expression
+    // Prediction: 2 because we did not define b
+    // Actual: 23 because i forgot the first one
+
+// What will be the outcome of a + b in the first expression ? 55 
+// What will be the outcome of a + b in the second expression ? 23
+// What is the value of c? undefined
+
+// Analyse the code below, what will be the outcome?
+// console.log(3 + 4 + '5');
+// 75 because 5 is a string without any space
