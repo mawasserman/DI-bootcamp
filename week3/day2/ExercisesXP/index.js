@@ -101,3 +101,84 @@ console.log(celcius+ "°C is " + ((celcius/5)*9)+32 + "°F.");
 // Analyse the code below, what will be the outcome?
 // console.log(3 + 4 + '5');
 // 75 because 5 is a string without any space
+
+// Exercise 5 : Guess The Answers #2
+
+// Instructions
+// For each expression, predict what you think the output will be in a comment (//) without first running the command.
+// Of course, explain each prediction.
+// Then run the expression in the console. Note the actual output in a comment and compare it with your prediction.
+
+
+
+// For example
+
+// typeof("potato")
+// Prediction: Vegetable
+// Actual: String
+
+
+// What is the output of each of the expressions below?
+typeof(15)
+// Prediction: number no quotation marks
+// Actual: number
+
+typeof(5.5)
+// Prediction: number also no quotation marks
+// Actual: number
+
+typeof(NaN)
+// Prediction: null
+// Actual: number, I was deceived 
+
+typeof("hello")
+// Prediction: string
+// Actual:
+
+typeof(true)
+// Prediction: boolean, because it is true of false
+// Actual: boolean
+
+typeof(1 != 2)
+// Prediction: function because compare #s
+// Actual: boolean
+
+"hamburger" + "s"
+// Prediction: hamburgers, string w/ quotation marks
+// Actual: hamburgers
+
+"hamburgers" - "s"
+// Prediction: 
+// Actual: NaN
+
+"1" + "3"
+// Prediction: 13 string
+// Actual: 13
+
+"1" - "3"
+// Prediction: -2, it will be treated as number, it has value
+// Actual: -2
+
+"johnny" + 5
+// Prediction: johnny5, string
+// Actual: johnny5
+
+"johnny" - 5
+// Prediction: NaN
+// Actual: NaN
+
+99 * "hello"
+// Prediction: hellohellohellohello...hellohellohellohello
+// Actual: NaN
+
+1 != 1
+// Prediction: false, because 1 is not different of 1
+// Actual: false
+
+1 == "1"
+// Prediction: true, because it has only 2 equal signs so it will compare values
+// Actual: true
+
+1 === "1"
+// Prediction: false, because it has 3 = so it will also compare types
+// Actual: false
