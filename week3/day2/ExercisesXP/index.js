@@ -182,3 +182,71 @@ typeof(1 != 2)
 1 === "1"
 // Prediction: false, because it has 3 = so it will also compare types
 // Actual: false
+
+// Exercise 6 : Guess The Answers #3
+
+// Instructions
+// For each expression, predict what you think the output will be in a comment (//) without first running the command.
+// Of course, explain each prediction.
+// Then run the expression in the console. Note the actual output in a comment and compare it with your prediction.
+
+
+
+// What is the output of each of the expressions below?
+
+
+5 + "34"
+// Prediction: 534, 34 is a string w/o quotation marks
+// Actual:534
+
+5 - "4"
+// Prediction: 1, 4 will be a #
+// Actual: 1 
+
+10 % 5
+// Prediction: 0, because it shows the rest of the division
+// Actual: 0
+
+5 % 10
+// Prediction: 0
+// Actual: 5
+
+"Java" + "Script"
+// Prediction: JavaScript, w/o space
+// Actual: JavaScript
+
+" " + " "
+// Prediction:   (I typed 2 empty spaces)
+// Actual: '  '
+
+" " + 0
+// Prediction:  0 (I typed 1 empty space)
+// Actual: ' 0'
+
+true + true
+// Prediction: true
+// Actual: 2 (why?)
+
+true + false
+// Prediction: false
+// Actual: 1
+
+false + true
+// Prediction: 1 (logic after mistakes)
+// Actual: 1 
+
+false - true
+// Prediction: -1
+// Actual: -1
+
+!true
+// Prediction: 
+// Actual: false
+
+3 - 4
+// Prediction: -1
+// Actual: -1
+
+"Bob" - "bill"
+// Prediction: NaN
+// Actual: NaN
