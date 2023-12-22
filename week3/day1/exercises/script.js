@@ -15,3 +15,16 @@ let globalAddress = "I live in " + addressStreet + " " + addressNumber + ", in" 
 // In order to create a sentence
 // 3. Display globalAddress Example: globalAddress should display « I live in BenYehuda 5, in Israel »
 console.log(globalAddress);
+
+// Exercise 2
+// 1. Store your birth year in a variable.
+let bdayYear = 1989
+
+// 2. Store a future year in a variable.
+let futureYear = 2038
+
+// 3. Calculate your possible ages for that year based on the stored values.
+let futureAge = futureYear - bdayYear
+
+// 4. Display : "I will be NN in YYYY", substituting the values.
+console.log("I will be "+ futureAge + " in " + futureYear)
