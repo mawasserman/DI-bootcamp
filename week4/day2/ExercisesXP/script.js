@@ -34,18 +34,18 @@ infoAboutPerson("Josh", 12, "yellow");
 // If the bill is less than $50, tip 20%.
 // If the bill is between $50 and $200, tip 15%.
 // If the bill is more than $200, tip 10%.
-function calculateTip(){
-    billValue = prompt("How much was the bill John?")
-    if (billValue < 50) {
-        console.log("Tip them " + Number(billValue)*0.2 + ". The final bill is " + Number(billValue)*1.2);
-    }
-    else if (50 < billValue < 200){
-        console.log("Tip them " + Number(billValue)*0.15 + ". The final bill is " + Number(billValue)*1.15);
-    }
-    else {
-        console.log("Tip them " + Number(billValue)*0.1 + ". The final bill is " + Number(billValue)*1.1);
-    }
-}
+// function calculateTip(){
+//     billValue = prompt("How much was the bill John?")
+//     if (billValue < 50) {
+//         console.log("Tip them " + Number(billValue)*0.2 + ". The final bill is " + Number(billValue)*1.2);
+//     }
+//     else if (50 < billValue < 200){
+//         console.log("Tip them " + Number(billValue)*0.15 + ". The final bill is " + Number(billValue)*1.15);
+//     }
+//     else {
+//         console.log("Tip them " + Number(billValue)*0.1 + ". The final bill is " + Number(billValue)*1.1);
+//     }
+// }
 
 // Console.log the tip amount and the final bill (bill + tip).
 
@@ -55,12 +55,21 @@ calculateTip()
 // 🌟 Exercise 3 : Find The Numbers Divisible By 23
 // Instructions
 // Create a function call isDivisible() that takes no parameter.
-
 // In the function, loop through numbers 0 to 500.
-
+function isDivisible(){
+    let sum = 0;
+    for (let i = 0; i<501; i++) {
+        if (i%23 === 0){
+            sum = sum+i;
+            console.log(i);
+        }
+    }
+    console.log(sum + "the sum");
+}
 // Console.log all the numbers divisible by 23.
-
+isDivisible() //Individually consoled
 // At the end, console.log the sum of all numbers that are divisible by 23.
+
 
 // Outcome : 0 23 46 69 92 115 138 161 184 207 230 253 276 299 322 345 368
 // 391 414 437 460 483
@@ -68,13 +77,20 @@ calculateTip()
 
 
 // Bonus: Add a parameter divisor to the function.
-
 // isDivisible(divisor)
+function isDivisible(divisor){
+    let sum = 0;
+    for (let i = 0; i<501; i++) {
+        if (i%divisor === 0){
+            sum = sum+i;
+            console.log(i);
+        }
+    }
+    console.log(sum + "the sum");
+}
 
-// Example:
-// isDivisible(3) : Console.log all the numbers divisible by 3, and their sum
-// isDivisible(45) : Console.log all the numbers divisible by 45, and their sum
-
+// isDivisible(3);
+// isDivisible(45);
 
 // 🌟 Exercise 4 : Shopping List
 // Instructions
