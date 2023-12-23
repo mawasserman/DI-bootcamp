@@ -4,17 +4,24 @@
 
 // Create a function called infoAboutMe() that takes no parameter.
 // The function should console.log a sentence about you (ie. your name, age, hobbies ect…).
+function infoAboutMe(){
+    console.log("I have two demon cats");
+}
 // Call the function.
-
+infoAboutMe();
 
 // Part II : function with three parameters
 
 // Create a function called infoAboutPerson(personName, personAge, personFavoriteColor) that takes 3 parameters.
 // The function should console.log a sentence about the person (ie. “You name is …, you are .. years old, your favorite color is …”)
+function infoAboutPerson(personName, personAge, personFavoriteColor){
+    console.log("You name is " + personName + " you are " + personAge + " years old, your favorite color is " + personFavoriteColor);
+}
 // Call the function twice with the following arguments:
 // infoAboutPerson("David", 45, "blue")
 // infoAboutPerson("Josh", 12, "yellow")
-
+infoAboutPerson("David", 45, "blue");
+infoAboutPerson("Josh", 12, "yellow");
 
 // 🌟 Exercise 2 : Tips
 // Instructions
