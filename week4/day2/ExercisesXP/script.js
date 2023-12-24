@@ -270,9 +270,11 @@ function carCost(){
 // Define a function called totalVacationCost() that returns the total cost of the user’s vacation by calling the 3 functions that you created above.
 // Example : 
 // Hint: You have to call the functions hotelCost(), planeRideCost() and rentalCarCost() inside the function totalVacationCost().
-let totalVacationCost(){
-    let everything = hotelCost() + 
-    console.log("The car cost: " + carCost() ", the hotel cost: " +  hotelCost() + ", the plane tickets cost: " planeRideCost())
+function totalVacationCost(){ 
+    let car = carCost();
+    let hotel = hotelCost();
+    let plane = planeRideCost();
+    console.log("The car cost: " + car + ", the hotel cost: " +  hotel + ", the plane tickets cost: " + plane);
 }
 // Call the function totalVacationCost()
 totalVacationCost()
