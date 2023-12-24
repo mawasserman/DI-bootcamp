@@ -153,26 +153,28 @@
 // Create a function named changeEnough(itemPrice, amountOfChange) that receives two arguments :
 // an item price
 // and an array representing the amount of change in your pocket.
-let itemPrice = prompt ("Price")
-let amountOfChange = prompt ("Change")
-function changeEnough(itemPrice, amountOfChange){
     // In the function, determine whether or not you can afford the item.
-    // If the sum of the change is bigger or equal than the item’s price (ie. it means that you can afford the item), the function should return true
-    sum = 0
-    for (amountOfChange[i]; i=0; i++){
-        sum = sum + i;
-    }
-    if (itemPrice <= sum){
-        console.log(true);
-    } else {
-        console.log(false);
-    }
-}
+//     // If the sum of the change is bigger or equal than the item’s price (ie. it means that you can afford the item), the function should return true
+// let itemPrice = prompt ("Price")
+// let amountOfChange = prompt ("Change")
+ 
+// let totalMoney = allChange()
 
-changeEnough(6.50, [0.5, 0.2, 0.4])
+// function allChange (amountOfChange){
+//     let sum = 0
+//     for (amountOfChange[i]; i=0; i++){
+//         sum = sum + i;
+//     }
+// }
+// function changeEnough(itemPrice, amountOfChange){
+//         if (itemPrice <= totalMoney){
+//         console.log(true);
+//     } else {
+//         console.log(false);
+//     }
+// }
 
-
-// If the sum of the change is smaller than the item’s price (ie. it means that you cannot afford the item) the function should return false
+// // If the sum of the change is smaller than the item’s price (ie. it means that you cannot afford the item) the function should return false
 
 // Change will always be represented in the following order: quarters, dimes, nickels, pennies.
 // A quarters is 0.25
@@ -205,6 +207,16 @@ changeEnough(6.50, [0.5, 0.2, 0.4])
 // It should ask the user for the number of nights they would like to stay in the hotel.
 // If the user doesn’t answer or if the answer is not a number, ask again.
 // The hotel costs $140 per night. The function should return the total price of the hotel.
+function hotelCost(){
+    const totalNights = prompt ("How many nights are you staying?");
+    const typeofNights = typeof totalNights
+    if (typeofNights == Number){
+        console.log("Total price is $" + totalNights*140);
+    }
+    else {
+        console.log("Please, enter only numbers");
+    } 
+}
 
 // Define a function called planeRideCost().
 // It should ask the user for their destination.
@@ -214,17 +226,54 @@ changeEnough(6.50, [0.5, 0.2, 0.4])
 // “Paris” : 220$
 // All other destination : 300$
 
+function planeRideCost(){
+    const totalPlaneCost = prompt ("What is your destination?");
+    const typeofDestination = typeof totalPlaneCost
+    if (typeofDestination == String){
+        if (totalPlaneCost == "London"){
+            console.log("The price is 183$")
+        }
+        else if (totalPlaneCost == "Paris"){
+            console.log("The tota price is 220$");
+        }
+        else {
+            console.log("The total price is 300$$")
+        }
+    }
+    else {
+        console.log("Please, enter only letters");
+    } 
+}
+
 // Define a function called rentalCarCost().
 // It should ask the user for the number of days they would like to rent the car.
 // If the user doesn’t answer or if the answer is not a number, ask again.
 // Calculate the cost to rent the car. The car costs $40 everyday.
 // If the user rents a car for more than 10 days, they get a 5% discount.
 // The function should return the total price of the car rental.
+function carCost(){
+    const totalDays = prompt ("How many days you will need?");
+    const typeofDays = typeof totalDays
+    if (typeofDays == Number){
+        if (totalDays < 10){
+            console.log("Total price is $" + totalDays*40);
+        } else {
+            console.log("Total price is $" + totalDays*40*0.95);
+        }
+    }
+    else {
+        console.log("Please, enter only numbers");
+    } 
+}
+
 
 // Define a function called totalVacationCost() that returns the total cost of the user’s vacation by calling the 3 functions that you created above.
-// Example : The car cost: $x, the hotel cost: $y, the plane tickets cost: $z.
+// Example : 
 // Hint: You have to call the functions hotelCost(), planeRideCost() and rentalCarCost() inside the function totalVacationCost().
-
+let totalVacationCost(){
+    let everything = hotelCost() + 
+    console.log("The car cost: " + carCost() ", the hotel cost: " +  hotelCost() + ", the plane tickets cost: " planeRideCost())
+}
 // Call the function totalVacationCost()
-
+totalVacationCost()
 // Bonus: Instead of using a prompt inside the 3 first functions, only use a prompt inside the totalVacationCost() function. You need to change the 3 first functions, accordingly.
