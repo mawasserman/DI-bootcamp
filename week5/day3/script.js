@@ -15,19 +15,29 @@ setTimeout(showBanner, 5000)
 
 // ... "The sales end in 9sec ! "
 
-// etc ... until 0
-let number10 = document.getElementById("number").innerText
-let myInterval =  setInterval(
-    function countdown (){
-        number10 = Number(number10) -1;
-        document.getElementById("number").innerText = number10;
-    }, 1000)
+// // etc ... until 0
+// // MEUUUU!!
+// let number10 = document.getElementById("number").innerText
+// let myInterval =  setInterval(function countdown (){ // ELE NÃO PRECISA DE LOOPING NEM NADA PQ SETINTERVAL VAI REPETIR ATE O CLEAR
+//         number10 = Number(number10) -1;
+//         document.getElementById("number").innerText = number10;
+//     }, 1000) //DANI COLOCOU ESS DEPOIS DO MEU IF E TIROU O ELSE
 
-if (Number(number10) > 0){
-    myInterval
-}
-else {
-    clearInterval(myInterval)
-}
+// if (Number(number10) > 0){
+//     myInterval
+// }
+// else {
+//     clearInterval(myInterval)
+// }
 
-// If you need help for this exercise, look at the 1st video of this tutorial
+// // If you need help for this exercise, look at the 1st video of this tutorial
+
+// Dani me dando uma moral
+let number10 = document.getElementById("number").innerText;
+let myInterval = setInterval(function countdown() {
+    number10 = Number(number10) - 1;
+    document.getElementById("number").innerText = number10;
+    if (Number(number10) <= 0) {
+        clearInterval(myInterval);
+    }
+}, 1000);
