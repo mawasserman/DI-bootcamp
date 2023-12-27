@@ -16,17 +16,17 @@ setTimeout(showBanner, 5000)
 // ... "The sales end in 9sec ! "
 
 // etc ... until 0
-let number10= parseFloat(document.getElementById("number"))
+let number10 = document.getElementById("number").innerText
 
-if (number10 >= 0){
+if (Number(number10) > 0){
     setInterval(
     function countdown (){
-        number10 = number10 -1;
+        number10 = Number(number10) -1;
+        document.getElementById("number").innerText = number10;
     }, 1000)
-    else {
-        clearInterval(setInterval())
-
-    }
+}
+else {
+    clearInterval(countdown)
 }
 
 // If you need help for this exercise, look at the 1st video of this tutorial
