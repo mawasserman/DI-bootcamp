@@ -17,16 +17,17 @@ setTimeout(showBanner, 5000)
 
 // etc ... until 0
 let number10 = document.getElementById("number").innerText
-
-if (Number(number10) > 0){
-    setInterval(
+let myInterval =  setInterval(
     function countdown (){
         number10 = Number(number10) -1;
         document.getElementById("number").innerText = number10;
     }, 1000)
+
+if (Number(number10) > 0){
+    myInterval
 }
 else {
-    clearInterval(countdown)
+    clearInterval(myInterval)
 }
 
 // If you need help for this exercise, look at the 1st video of this tutorial
