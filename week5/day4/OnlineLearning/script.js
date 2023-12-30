@@ -6,7 +6,7 @@ let body = document.getElementById("gradient"); // pq a cor está aplicada no bo
 function setGradient(){ 
     body.style.background = "linear-gradient(to right, " + color1.value + ", " + color2.value + ")";
 
-    css.textContent = body.style.background + ";";
+    css.textContent = body.style.background + ";"; //step 5
 } // step 4
 color1.addEventListener("input", setGradient)
  // console.log(color1.value)}) // step 2
