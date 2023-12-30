@@ -10,14 +10,14 @@
 // * * * * * *
 
 // DID NOT WORK, saw explanation but left the wrong one here to understand
-let ast = "*"
-for (i = "*"; ast.lenght < 7; i=i+"*"){
-    ast = ast + "*";
-    console.log(ast);
+let stars = " "
+for (let i = 0; i < 6; i++){
+    stars = stars + " *"
+    console.log(stars);
 }
 
 // nested loops
-while (ast.length < 7) {
-    for (let i = 0; ast. < 9; i++) {
-    console.log(i);
-}
+// while (ast.length < 7) {
+//     for (let i = 0; ast. < 9; i++) {
+//     console.log(i);
+// }
