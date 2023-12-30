@@ -11,13 +11,14 @@
 
 // DID NOT WORK, saw explanation but left the wrong one here to understand
 let stars = " "
-for (let i = 0; i < 6; i++){
+// for (let i = 0; i < 6; i++){
+//     stars = stars + " *"
+//     console.log(stars);
+// }
+
+// // nested loops
+while (stars.length < 12) {
     stars = stars + " *"
     console.log(stars);
 }
-
-// nested loops
-// while (ast.length < 7) {
-//     for (let i = 0; ast. < 9; i++) {
-//     console.log(i);
-// }
+//not the exercise
