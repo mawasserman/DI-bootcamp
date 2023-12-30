@@ -24,22 +24,26 @@
 // Exercise 2
 let names= ["john", "sarah", 23, "Rudolf",34]
 // 1. Write a JavaScript for loop that will go through the variable names.
-for (let namei of names){
-    if (typeof namei !== 'string') {// if the item is not a string, pass.
-        continue;
-        console.log(namei)
-    }
-    else if (namei.charAt(0) !== namei.charAt(0).toUpperCase()) {
-        namei = namei.charAt(0).toUpperCase() + namei.slice(1);
-        console.log(namei);
-    }
-}
+// for (let namei of names){
+//     if (typeof namei !== 'string') {// if the item is not a string, pass.
+//         continue;
+//         console.log(namei)
+//     }
+//     else if (namei.charAt(0) !== namei.charAt(0).toUpperCase()) {
+//         namei = namei.charAt(0).toUpperCase() + namei.slice(1);
+//         console.log(namei);
+// // if the item is a string, check if its first letter is in uppercase. If not, change it to uppercase and then display the name.
 
-// if the item is a string, check if its first letter is in uppercase. If not, change it to uppercase and then display the name.
-
-
+//     }
+// }
 
 // 2. Write a JavaScript for loop that will go through the variable names
+for (let namei of names){
+    if (typeof namei !== 'string') {// if the item is not a string, go out of the loop.
+        break;
+        console.log(namei)
+    }
+     console.log(namei);// if the item is a string, display it.
+     // antes eu tinha colocado dentro de um else, mas depois vi que não precisava...
+}
 
-// if the item is not a string, go out of the loop.
-// if the item is a string, display it.
