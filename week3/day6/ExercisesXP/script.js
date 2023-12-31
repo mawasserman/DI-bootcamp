@@ -139,15 +139,20 @@ const building = {
 //     console.log(family[secondName]);
 // }
 
-// Exercise 6 : Rudolf
-// Instructions
+// // Exercise 6 : Rudolf
+// // Instructions
 // const details = {
 //   my: 'name',
 //   is: 'Rudolf',
 //   the: 'raindeer'
 // }
-// Given the object above and using a for loop, console.log “my name is Rudolf the raindeer”
-
+// // Given the object above and using a for loop, console.log “my name is Rudolf the raindeer”
+// let sentence = '';
+// for (let words in details){
+//     sentence = sentence + words + ' ' + details[words]+ ' '
+   
+// }
+// console.log(sentence)
 
 // Exercise 7 : Secret Group
 // Instructions
