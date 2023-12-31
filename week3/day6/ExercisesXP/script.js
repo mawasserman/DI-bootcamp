@@ -155,8 +155,25 @@ const building = {
 // console.log(sentence)
 
 // Exercise 7 : Secret Group
-// Instructions
-// const names = ["Jack", "Philip", "Sarah", "Amanda", "Bernard", "Kyle"];
+// Instructions.
+
+const names = ["Jack", "Philip", "Sarah", "Amanda", "Bernard", "Kyle"];
+
 // A group of friends have decided to start a secret society. The society’s name will be the first letter of each of their names sorted in alphabetical order.
 // Hint: a string is an array of letters
 // Console.log the name of their secret society. The output should be “ABJKPS”
+// names.sort();
+// console.log(names)
+// let nameClub = names.map(name => name[0])
+// let together = nameClub.toString()
+// let final = together.replace(/,/g , '')
+// console.log(final) // mine
+
+// the explanation:
+let acro = ''
+
+for(const name of names.sort()){
+    console.log(name);
+    acro= acro + name[0]
+}
+console.log(acro)
