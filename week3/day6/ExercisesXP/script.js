@@ -64,55 +64,80 @@
 // Instructions
 // Prompt the user for a number.
 // Hint : Check the data type you receive from the prompt (ie. Use the typeof method)
-const numberInput = prompt("give me a number") 
-while ( numberInput < 10){
-    if ( numberInput == isNaN){
-        alert ("This is not a number!")
-        prompt ("Give me a indo-arabic numerals")
-    }
-    else 
-}
+// let inarNumber = null
+
+// while ( inarNumber < 10){
+//     let numberInput = prompt("give me a number");
+//     inarNumber = Number(numberInput);
+// }
+// alert ("Good one!")
+
+
 // While the number is smaller than 10 continue asking the user for a new number.
 // Tip : Which while loop is more relevant for this situation?
 
 
 // 🌟 Exercise 4 : Building Management
 // Instructions:
-// const building = {
-//     numberOfFloors: 4,
-//     numberOfAptByFloor: {
-//         firstFloor: 3,
-//         secondFloor: 4,
-//         thirdFloor: 9,
-//         fourthFloor: 2,
-//     },
-//     nameOfTenants: ["Sarah", "Dan", "David"],
-//     numberOfRoomsAndRent:  {
-//         sarah: [3, 990],
-//         dan:  [4, 1000],
-//         david: [1, 500],
-//     },
-// }
+const building = {
+    numberOfFloors: 4,
+    numberOfAptByFloor: {
+        firstFloor: 3,
+        secondFloor: 4,
+        thirdFloor: 9,
+        fourthFloor: 2,
+    },
+    nameOfTenants: ["Sarah", "Dan", "David"],
+    numberOfRoomsAndRent:  {
+        sarah: [3, 990],
+        dan:  [4, 1000],
+        david: [1, 500],
+    },
+}
 
 
 // Review About Objects
 // Copy and paste the above object to your Javascript file.
 
-// Console.log the number of floors in the building.
+// // Console.log the number of floors in the building.
+// console.log(building.numberOfFloors);
 
-// Console.log how many apartments are on the floors 1 and 3.
+// // Console.log how many apartments are on the floors 1 and 3.
+// console.log(building.numberOfAptByFloor.firstFloor , building.numberOfAptByFloor.thirdFloor)
 
-// Console.log the name of the second tenant and the number of rooms he has in his apartment.
+// // Console.log the name of the second tenant and the number of rooms he has in his apartment.
+// console.log(building.nameOfTenants[1] , building.numberOfRoomsAndRent.dan[0])
 
-// Check if the sum of Sarah’s and David’s rent is bigger than Dan’s rent. If it is, than increase Dan’s rent to 1200.
+// // Check if the sum of Sarah’s and David’s rent is bigger than Dan’s rent. If it is, than increase Dan’s rent to 1200.
+// let sarahRent = building.numberOfRoomsAndRent.sarah[1];
+// let davidRent = building.numberOfRoomsAndRent.david[1];
+// let danRent = building.numberOfRoomsAndRent.dan[1];
 
+// if ( (sarahRent + davidRent) > danRent){
+//     danRent = 1200
+//     console.log(danRent)
+// } else {
+//     console.log(danRent)
+// }
 
-// 🌟 Exercise 5 : Family
-// Instructions
-// Create an object called family with a few key value pairs.
-// Using a for in loop, console.log the keys of the object.
-// Using a for in loop, console.log the values of the object.
+// // 🌟 Exercise 5 : Family
+// // Instructions
+// // Create an object called family with a few key value pairs.
+// const family = {
+//     Papai: "Gabriel",
+//     Marcella: 'Ariella',
+//     Uri: 'Gabriel',
+//     Alona: 'Noa',
+// }
+// // Using a for in loop, console.log the keys of the object.
+// for (let firstName in family){
+//     console.log(firstName);
+// }
 
+// // Using a for in loop, console.log the values of the object.
+// for (let secondName in family){
+//     console.log(family[secondName]);
+// }
 
 // Exercise 6 : Rudolf
 // Instructions
