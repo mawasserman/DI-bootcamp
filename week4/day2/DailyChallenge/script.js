@@ -8,6 +8,7 @@ function banner(){
   for (let i=0; i<sentenceArray.length; i++)
   newSentence = newSentence + '*'
 }
+sentenceArray.forEach(console.log(sentenceArray))
 // Check out the Hints and Requirements below.
 // For example, if the user gives you:
 // Hello, World, in, a, frame
