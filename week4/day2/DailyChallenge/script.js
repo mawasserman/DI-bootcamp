@@ -3,16 +3,28 @@ let sentence = prompt("Give me several words (separated by commas)")
 // Put the words into an array.
 let sentenceArray = sentence.split(',');
 // Console.log the words one per line, in a rectangular frame as seen below.
-let lengthOfLongest = 0
-for (let word of sentenceArray) {
-  const wordLength = word.length;
-  if (wordLength > lengthOfLongest)
+let lengthOfLongest = 0;
+for (let item of sentenceArray) {
+  const wordLength = item.length;
+  if (wordLength > lengthOfLongest) {
   lengthOfLongest = wordLength
+  }
 }
-const starsUpDown = '*'.repeat(lengthOfLongest + 4)
-function updown(){console.log(starsUpDown)}
+
+const starsUpDown = '*'.repeat(lengthOfLongest + 4);
+
+function updown() {
+  console.log(starsUpDown)
+}
+
 updown();
-sentenceArray.forEach(item => console.log(`* ${item} *`));
+
+sentenceArray.forEach(item => {
+let difference = lengthOfLongest - item.length;
+let space = ' '.repeat(difference);
+console.log("* "+ item + space + " *")
+});
+
 updown();
 
 // function length(sentenceArray){
