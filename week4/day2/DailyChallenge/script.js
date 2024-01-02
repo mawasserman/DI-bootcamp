@@ -3,7 +3,29 @@ let sentence = prompt("Give me several words (separated by commas)")
 // Put the words into an array.
 let sentenceArray = sentence.split(',');
 // Console.log the words one per line, in a rectangular frame as seen below.
-sentenceArray.forEach(item => console.log(item));
+let lengthOfLongest = 0
+for (let word of sentenceArray) {
+  console.log(word);
+  const wordLength = word.length;
+  if (wordLength > word.length)
+  lengthOfLongest = wordLength
+}
+const starsUpDown = '*'.repeat(lengthOfLongest + 4)
+function updown(){console.log(starsUpDown)}
+updown();
+sentenceArray.forEach(item => console.log(`* ${item} *`));
+updown();
+
+// function length(sentenceArray){
+//   let wordLength = item.length();{
+//     if (longestWord <item.length()){
+//       longestWord = item.length()
+//     }
+//   }
+//   return wordLength;
+// }
+// length(sentenceArray)
+// console.log(wordLength)
 // Check out the Hints and Requirements below.
 // For example, if the user gives you:
 // Hello, World, in, a, frame
