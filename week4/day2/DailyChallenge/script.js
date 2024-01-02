@@ -5,9 +5,8 @@ let sentenceArray = sentence.split(',');
 // Console.log the words one per line, in a rectangular frame as seen below.
 let lengthOfLongest = 0
 for (let word of sentenceArray) {
-  console.log(word);
   const wordLength = word.length;
-  if (wordLength > word.length)
+  if (wordLength > lengthOfLongest)
   lengthOfLongest = wordLength
 }
 const starsUpDown = '*'.repeat(lengthOfLongest + 4)
