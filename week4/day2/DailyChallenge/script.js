@@ -2,13 +2,8 @@
 let sentence = prompt("Give me several words (separated by commas)")
 // Put the words into an array.
 let sentenceArray = sentence.split(',');
-let newSentence = '**'
 // Console.log the words one per line, in a rectangular frame as seen below.
-function banner(){
-  for (let i=0; i<sentenceArray.length; i++)
-  newSentence = newSentence + '*'
-}
-sentenceArray.forEach(console.log(sentenceArray))
+sentenceArray.forEach(item => console.log(item));
 // Check out the Hints and Requirements below.
 // For example, if the user gives you:
 // Hello, World, in, a, frame
