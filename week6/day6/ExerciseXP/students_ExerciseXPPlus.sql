@@ -69,9 +69,13 @@
 -- WHERE first_name ILIKE '%a';
 
 -- 3.7. Fetch the students whose second to last letter of their first_names are a (Example: Leah).
-
+-- SELECT first_name, last_name FROM students
+-- WHERE SUBSTRING(first_name FROM 3) ILIKE 'a%';
 
 -- 3.8. Fetch the students whose id’s are equal to 1 AND 3 .
-
+-- SELECT first_name, last_name FROM students
+-- WHERE id IN (1, 3);
 
 -- 4. Fetch the students whose birth_dates are equal to or come after 1/01/2000. (show all their info).
+-- SELECT * FROM students
+-- WHERE birth_date >= '01/01/2000';
