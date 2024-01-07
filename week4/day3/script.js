@@ -1,12 +1,12 @@
-// </html>
 // For each of the questions, find 2 WAYS of accessing :
 
 // 1. The div DOM node?
-// body.firstElementChild
+console.log(body.firstElementChild);
 // body.children[0]
 
 // 2. The ul DOM node?
-
+// body.lastElementChild
+// body.children[1]
 
 // 3. The second li (with Pete)?Accessing the div DOM node:
 
