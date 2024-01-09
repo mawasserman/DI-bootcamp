@@ -36,14 +36,14 @@
 
 --     SELECT COUNT(*) 
 --     FROM FirstTab AS ft WHERE ft.id NOT IN ( SELECT id FROM SecondTab WHERE id = 5 )
--- -- 2, because null is nul, so the 6 and 7 
+-- -- 2, because null is null, so the 6 and 7 
 -- -- yeah!
 
 -- Q3. What will be the OUTPUT of the following statement?
 
 --     SELECT COUNT(*) 
 --     FROM FirstTab AS ft WHERE ft.id NOT IN ( SELECT id FROM SecondTab )
--- -- 3 because of the no
+-- -- 3 because of the null
 -- -- Wrong again... the null ends the whole thing and that'd it
 
 -- Q4. What will be the OUTPUT of the following statement?
