@@ -21,3 +21,15 @@ ON actors.actor_id = countries.country_id
 SELECT * FROM actors
 FULL OUTER JOIN countries
 ON actors.actor_id = countries.country_id
+
+UPDATE actors SET age='1970-01-01' WHERE first_name='Matt' AND last_name='Damon';
+
+-- day5
+UPDATE actors 
+SET age='1970-01-01' 
+WHERE first_name='Matt' AND last_name='Damon'
+RETURNING 
+    actor_id,
+    first_name, 
+    last_name,
+    age;
