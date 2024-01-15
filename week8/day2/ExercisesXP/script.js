@@ -46,7 +46,17 @@ text.innerText = person;
 
 // Create a Bootstrap Navbar in your HTML file.
 // In your js file, create a self invoking funtion that takes 1 argument: the name of the user that just signed in.
-// The function should add a div in the nabvar, displaying the name of the user and his profile picture.
+(function (userName){
+// The function should add a div in the nabvar, displaying the name of the user and his profile picture.    
+    const profile = document.createElement("div");
+    document.body.appendChild(profile);
+    profile.innerText = userName;
+    const picture = document.createElement("img");
+    picture.src = "https://variety.com/wp-content/uploads/2018/09/johnny-english-strikes-again.jpg";
+    picture.style.width = "200px";
+    profile.appendChild(picture);
+})('John');
+// AAAAAAHHHHHHHHHHHHHHHH
 
 
 // 🌟 Exercise 5 : Juice Bar
@@ -55,10 +65,20 @@ text.innerText = person;
 
 // Part I:
 // The outer function named makeJuice receives 1 argument: the size of the beverage the client wants - small, medium or large.
+function makeJuice(s){
+    // The inner function named addIngredients receives 3 ingredients, and displays on the DOM a sentence like The client wants a <size drink> juice, containing <first ingredient>, <second ingredient>, <third ingredient>".
+    function addIngredients(a, b, c){
+        const paragrafo = document.createElement("p");
+        paragrafo.innerText = `The client wants a ${s} juice, containing ${a}, ${b}, ${c}.`;
+        document.body.appendChild(paragrafo);
+    }
+    // Invoke the inner function ONCE inside the outer function. Then invoke the outer function in the global scope.
+    addIngredients('abacaxi', 'banana', 'caju');
+    const ingredients = []
+}
+makeJuice('small');
 
-// The inner function named addIngredients receives 3 ingredients, and displays on the DOM a sentence like The client wants a <size drink> juice, containing <first ingredient>, <second ingredient>, <third ingredient>".
 
-// Invoke the inner function ONCE inside the outer function. Then invoke the outer function in the global scope.
 
 
 // Part II:
