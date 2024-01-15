@@ -29,7 +29,15 @@ let gramArrow = (kg) => kg*1000;
 // 🌟 Exercise 3 : Fortune Teller
 // Instructions
 // Create a self invoking function that takes 4 arguments: number of children, partner’s name, geographic location, job title.
+
+const person = (function (numberChildren, partnerName, gps, profession){
+    return `You will be a ${profession} in ${gps}, and married to ${partnerName} with ${numberChildren} kids.`
+})(2, 'Thiago', 'Petach Tikva', 'geologist')
+
+
 // The function should display in the DOM a sentence like "You will be a <job title> in <geographic location>, and married to <partner's name> with <number of children> kids."
+const text = document.getElementById("exerc3");
+text.innerText = person;
 
 
 // 🌟 Exercise 4 : Welcome
