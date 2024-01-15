@@ -73,16 +73,19 @@ function makeJuice(s){
         document.body.appendChild(paragrafo);
     }
     // Invoke the inner function ONCE inside the outer function. Then invoke the outer function in the global scope.
-    addIngredients('abacaxi', 'banana', 'caju');
+    addIngredients('abacaxi', 'banana', 'caju');// Part II:
+// In the makeJuice function, create an empty array named ingredients.
     const ingredients = []
+    function displayJuice (){
+        
+    }
 }
 makeJuice('small');
 
 
 
 
-// Part II:
-// In the makeJuice function, create an empty array named ingredients.
+
 
 // The addIngredients function should now receive 3 ingredients, and push them into the ingredients array.
 
