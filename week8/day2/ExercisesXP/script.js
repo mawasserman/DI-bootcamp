@@ -56,7 +56,6 @@ text.innerText = person;
     picture.style.width = "200px";
     profile.appendChild(picture);
 })('John');
-// AAAAAAHHHHHHHHHHHHHHHH
 
 
 // 🌟 Exercise 5 : Juice Bar
