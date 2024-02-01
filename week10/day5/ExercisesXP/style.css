@@ -13,18 +13,19 @@ body {
 
 .heading {
     display: block;
-    height: 40%;
-   object-fit: contain;
+    height: 200px;
 }
 
-img {
-    
+.heading img {
+    height: 100%;
 }
+
 .content {
-    margin-top: 2em;
-    border: solid yellow;
-    border-radius: 5%;
+    margin-top: 6em;
+    border: solid rgb(226, 178, 33);
+    border-radius: 10px;
     width: 70%;
     height: 300px;
+    text-align: center;
 }
 
