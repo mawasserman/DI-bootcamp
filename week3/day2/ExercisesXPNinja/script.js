@@ -69,27 +69,39 @@
 // Hint: if statement (tomorrow’s lesson)
 
 // Prompt the user for a number. Depending on the users number you will return a string of the word “Boom”. Follow the rules below:
-const numUser = prompt("Give me a number")
-// If the number given is less than 2 : return “boom”
-if (numUser < 2){
-    alert("boom")
-}
-// If the number given is bigger than 2 : the string should include n number of “o”s (n being the number given)
-else if ( numUser > 2){
-    alert("b" + Number(numUser)*"o" + "m")
-}
-// If the number given is evenly divisible by 2, add a exclamation mark to the end.
-else if (numUser%2 == 0){
-    if (numUser%5 !== 0){
-        alert("boom!")
+function boom(){
+const inputUser = prompt("Give me a number");
+let numUser = Number(inputUser);
+
+    // If the number given is less than 2 : return “boom”
+    if (numUser <= 2){
+        alert("boom")
     }
-    else {
-        alert("BOOM!")
+
+    // If the number given is bigger than 2 : the string should include n number of “o”s (n being the number given)
+    else{
+        if (numUser%2 == 0 && numUser%5 !== 0){
+            let newBoom = [b, m];
+            for(let i = 0; i < numUser; i++)
+            newBoom.
+
+        }
+        if (numUser%5 !== 0){
+            alert("boom!")
+        }
+        else {
+            alert("BOOM!")
+        }
     }
-}
+        let newBoom = [b, m], 
+        alert("b" + numUser + "m")
+    }
+    // If the number given is evenly divisible by 2, add a exclamation mark to the end.
+else 
 // If the number given is evenly divisible by 5, return the string in ALL CAPS.
 else if (numUser%5 == 0){
     alert("BOOM")
+}
 }
 // If the number given is evenly divisible by both 2 and 5, return the string in ALL CAPS and add an exclamation mark to the end.
 
