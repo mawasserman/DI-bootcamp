@@ -9,16 +9,38 @@
 // * * * * *
 // * * * * * *
 
-// DID NOT WORK, saw explanation but left the wrong one here to understand
-let stars = " "
-// for (let i = 0; i < 6; i++){
+// // DID NOT WORK, saw explanation but left the wrong one here to understand
+// let stars = " "
+// // for (let i = 0; i < 6; i++){
+// //     stars = stars + " *"
+// //     console.log(stars);
+// // }
+
+// // // nested loops
+// while (stars.length < 12) {
 //     stars = stars + " *"
 //     console.log(stars);
 // }
+// //not the exercise
 
-// // nested loops
-while (stars.length < 12) {
-    stars = stars + " *"
+// REDOING IT ON 14 OF FEBRUARY
+
+// // ONE LOOP --- works...
+// let stars = "";
+// for(let i = 0; i < 6; i++){   
+//     stars = stars + "* "; 
+//     console.log(stars);
+// }
+
+// NESTED LOOPS
+let stars = "";
+for(let o = 1; o<2; o++){
+    for(let i = 0; i < 3; i++){   
+    stars = stars + "* "; 
+    console.log(stars);
+    }
+    stars = stars + stars;
     console.log(stars);
 }
-//not the exercise
+
+// i give up the nested one
