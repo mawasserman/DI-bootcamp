@@ -23,33 +23,31 @@
 
 
 
-// Exercise 2 : Zip Codes
-// Instruction
-// Harder exercise
-// Hint : This exercise has 2 parts. First, do this exercise without Regular Expressions, then do it using Regular Expressions
+// // Exercise 2 : Zip Codes
+// // Instruction
+// // Harder exercise
+// // Hint : This exercise has 2 parts. First, do this exercise without Regular Expressions, then do it using Regular Expressions
 
-// While working in a Post Office you must have the clients’ zip code in order to send them their letters.
-// Ask the client for their zip code and console.log “success” or “error” based on the following rules.
-const zipCodeString = prompt("Please enter your zipcode");
-const arrZip = zipCodeString.split("");
-const zipCode = Number(zipCodeString);
-console.log(zipCode);
+// // While working in a Post Office you must have the clients’ zip code in order to send them their letters.
+// // Ask the client for their zip code and console.log “success” or “error” based on the following rules.
+// const zipCodeString = prompt("Please enter your zipcode");
+// const arrZip = zipCodeString.split("");
 
-// Zip codes consists of 5 numbers
-if(arrZip.length == 5){
-    if(typeof zipCode !== "number" || zipCode === "NaN"){
-    console.log("error not a number");
-    }
-    else{
-        console.log("success");
-    }
-}
-else{
-    console.log("error bigger than 5");
-}
-// Must only contain numbers
-// Must not contain any whitespace (spaces)
-// Must not be greater than 5 digits in length
+// // Zip codes consists of 5 numbers
+// if(arrZip.length == 5){
+//     if(isNaN(zipCodeString)){ // // isNaN foi o pulo do gato
+//     console.log("error not a number");
+//     }
+//     else{
+//         console.log("success");
+//     }
+// }
+// else{
+//     console.log("error bigger than 5");
+// }
+// // Must only contain numbers
+// // Must not contain any whitespace (spaces)
+// // Must not be greater than 5 digits in length
 
 
 
@@ -60,7 +58,28 @@ else{
 // Hint : Use Regular Expressions
 
 // Prompt the user for a word and save it to a variable.
+const wordUser = prompt("Give me a word")
+
 // Delete all the vowels of the word and console.log the result.
+
+const noA = wordUser.replace(/a/gi, "1");
+const noE = noA.replace(/e/gi, "2");
+const noI = noE.replace(/i/gi, "3");
+const noO = noI.replace(/o/gi, "4");
+const noU = noO.replace(/u/gi, "5");
+
+alert(noU)
+
+// const arrWord = wordUser.toLowerCase().split("");
+// console.log(arrWord);
+
+// for(let i=0, i < arrWord.length, i++){
+//     switch(arrWord[i]){
+//         case "a":
+//     }
+// }
+
+
 // Bonus: Replace the vowels with another character and console.log the result
 // a = 1
 // e = 2
