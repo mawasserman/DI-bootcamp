@@ -19,7 +19,13 @@ for(i=0; i<=1; i++){
 
 // Bonus - Using Javascript:
 // Add a class called student_list to both of the <ul>'s.
+let j = 0
+for(j=0; j<=1; j++){
+    let ulNewClass = document.getElementsByTagName("ul")[j].classList.add("student_list");
+}
+
 // Add the classes university and attendance to the first <ul>.
+document.querySelector("ul").classList.add("university", "attendance");
 
 
 // 🌟 Exercise 2 : Users And Style
