@@ -1,67 +1,55 @@
-// 🌟 Exercise 1 : Users
-// Instructions
+// // 🌟 Exercise 1 : Users
+// // Instructions
 
-// Using Javascript:
-// Retrieve the div and console.log it
-let divDom = document.getElementsByTagName("div")[0];
-console.log(divDom);
-// Change the name “Pete” to “Richard”.
-document.querySelector("ul").lastElementChild.textContent = "Richard";
-// Delete the <li> that contains the text node “Sarah”. (It’s the second <li> of the second <ul>)
-let sarah = document.getElementsByTagName("ul")[1].children[1]
-document.getElementsByTagName("ul")[1].removeChild(sarah);
-// Change each first name of the two <ul>'s to your name. (Hint : use a loop)
-let i = 0
-for(i=0; i<=1; i++){
-    let ul = document.getElementsByTagName("ul")[i].firstElementChild
-    ul.textContent = "Marcella";
+// // Using Javascript:
+// // Retrieve the div and console.log it
+// let divDom = document.getElementsByTagName("div")[0];
+// console.log(divDom);
+// // Change the name “Pete” to “Richard”.
+// document.querySelector("ul").lastElementChild.textContent = "Richard";
+// // Delete the <li> that contains the text node “Sarah”. (It’s the second <li> of the second <ul>)
+// let sarah = document.getElementsByTagName("ul")[1].children[1]
+// document.getElementsByTagName("ul")[1].removeChild(sarah);
+// // Change each first name of the two <ul>'s to your name. (Hint : use a loop)
+// let i = 0
+// for(i=0; i<=1; i++){
+//     let ul = document.getElementsByTagName("ul")[i].firstElementChild
+//     ul.textContent = "Marcella";
+// }
+
+// // Bonus - Using Javascript:
+// // Add a class called student_list to both of the <ul>'s.
+// let j = 0
+// for(j=0; j<=1; j++){
+//     let ulNewClass = document.getElementsByTagName("ul")[j].classList.add("student_list");
+// }
+
+// // Add the classes university and attendance to the first <ul>.
+// document.querySelector("ul").classList.add("university", "attendance");
+
+
+// // 🌟 Exercise 2 : Users And Style
+// // Instructions
+
+// // Using Javascript:
+// // Add a “light blue” background color and some padding to the <div>.
+// let div = document.querySelector("div")
+// div.style.backgroundColor = "lightblue";
+// div.style.padding = "30px";
+// // Do not display the <li> that contains the text node “John”. (the first <li> of the <ul>)
+// document.querySelector("li").style.display = "none";
+// // Add a border to the <li> that contains the text node “Pete”. (the second <li> of the <ul>)
+// document.querySelector("ul").lastElementChild.style.border = "solid red"
+// // Change the font size of the whole body.
+// document.body.style.fontSize = "30px";
+
+// // Bonus: If the background color of the div is “light blue”, alert “Hello x and y” (x and y are the users in the div).
+// if(div.style.backgroundColor = "lightblue"){
+//     alert(`Hello ${document.querySelector("li").textContent} and ${document.querySelector("ul").lastElementChild.textContent}`);
 }
-
-// Bonus - Using Javascript:
-// Add a class called student_list to both of the <ul>'s.
-let j = 0
-for(j=0; j<=1; j++){
-    let ulNewClass = document.getElementsByTagName("ul")[j].classList.add("student_list");
-}
-
-// Add the classes university and attendance to the first <ul>.
-document.querySelector("ul").classList.add("university", "attendance");
-
-
-// 🌟 Exercise 2 : Users And Style
-// Instructions
-// <div>Users:</div>
-// <ul>
-//     <li>John</li>
-//     <li>Pete</li>
-// </ul>
-
-
-// Add the code above, to your HTML file
-
-// Using Javascript:
-// Add a “light blue” background color and some padding to the <div>.
-// Do not display the <li> that contains the text node “John”. (the first <li> of the <ul>)
-// Add a border to the <li> that contains the text node “Pete”. (the second <li> of the <ul>)
-// Change the font size of the whole body.
-
-// Bonus: If the background color of the div is “light blue”, alert “Hello x and y” (x and y are the users in the div).
-
 
 // 🌟 Exercise 3 : Change The Navbar
 // Instructions
-// <div id="navBar">
-//     <ul>
-//         <li><a href="#">Profile</a></li>
-//         <li><a href="#">Home</a></li>
-//         <li><a href="#">My Friends</a></li>
-//         <li><a href="#">Messenger</a></li>
-//         <li><a href="#">My Pics</a></li>
-//     </ul>
-// </div>
-
-
-// Add the code above, to your HTML file
 
 // Using Javascript, in the <div>, change the value of the id attribute from navBar to socialNetworkNavigation, using the setAttribute method.
 
