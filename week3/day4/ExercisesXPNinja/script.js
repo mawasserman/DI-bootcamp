@@ -62,22 +62,28 @@ const wordUser = prompt("Give me a word")
 
 // Delete all the vowels of the word and console.log the result.
 
-const noA = wordUser.replace(/a/gi, "1");
-const noE = noA.replace(/e/gi, "2");
-const noI = noE.replace(/i/gi, "3");
-const noO = noI.replace(/o/gi, "4");
-const noU = noO.replace(/u/gi, "5");
+// const noA = wordUser.replace(/a/gi, "1");
+// const noE = noA.replace(/e/gi, "2");
+// const noI = noE.replace(/i/gi, "3");
+// const noO = noI.replace(/o/gi, "4");
+// const noU = noO.replace(/u/gi, "5");
 
-alert(noU)
+// alert(noU)
 
-// const arrWord = wordUser.toLowerCase().split("");
-// console.log(arrWord);
+const arrWord = wordUser.toLowerCase().split("");
+console.log(arrWord);
+const newArr = [];
 
-// for(let i=0, i < arrWord.length, i++){
-//     switch(arrWord[i]){
-//         case "a":
-//     }
-// }
+for(let i=0; i < arrWord.length; i++){
+    if(arrWord[i] !== 'a' && arrWord[i] !== 'e'&& arrWord[i] !== 'i'&& arrWord[i] !== 'o'&& arrWord[i] !== 'u'){ // feito com o Dani, antes a gente tinha colocado o ou no lugar de então estavadando o statemente como true e não estava tirando as letras... 
+        newArr.push(arrWord[i]);
+    }
+}
+
+console.log(newArr);
+const stringWord = newArr.join("");
+
+console.log(stringWord);
 
 
 // Bonus: Replace the vowels with another character and console.log the result
