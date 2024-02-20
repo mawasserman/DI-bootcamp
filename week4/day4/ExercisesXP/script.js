@@ -52,6 +52,7 @@
 // Instructions
 
 // Using Javascript, in the <div>, change the value of the id attribute from navBar to socialNetworkNavigation, using the setAttribute method.
+document.querySelector("#navBar").setAttribute("id", "socialNetworkNavigation"); // why is not working??
 
 // We are going to add a new <li> to the <ul>.
 // First, create a new <li> tag (use the createElement method).
