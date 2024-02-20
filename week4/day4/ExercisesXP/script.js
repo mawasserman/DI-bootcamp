@@ -45,23 +45,29 @@
 
 // // Bonus: If the background color of the div is “light blue”, alert “Hello x and y” (x and y are the users in the div).
 // if(div.style.backgroundColor = "lightblue"){
-//     alert(`Hello ${document.querySelector("li").textContent} and ${document.querySelector("ul").lastElementChild.textContent}`);
-}
+//     alert(`Hello ${document.querySelector("li").textContent} and ${document.querySelector("ul").lastElementChild.textContent}`);}
 
-// 🌟 Exercise 3 : Change The Navbar
-// Instructions
+// // 🌟 Exercise 3 : Change The Navbar
+// // Instructions
 
-// Using Javascript, in the <div>, change the value of the id attribute from navBar to socialNetworkNavigation, using the setAttribute method.
-document.querySelector("#navBar").setAttribute("id", "socialNetworkNavigation"); // why is not working??
+// // Using Javascript, in the <div>, change the value of the id attribute from navBar to socialNetworkNavigation, using the setAttribute method.
+// document.querySelector("#navBar").setAttribute("id", "socialNetworkNavigation");
 
-// We are going to add a new <li> to the <ul>.
-// First, create a new <li> tag (use the createElement method).
-// Create a new text node with “Logout” as its specified text.
-// Append the text node to the newly created list node (<li>).
-// Finally, append this updated list node to the unordered list (<ul>), using the appendChild method.
+// // We are going to add a new <li> to the <ul>.
+// // First, create a new <li> tag (use the createElement method).
+// let newLi = document.createElement("li");
+// // Create a new text node with “Logout” as its specified text.
+// let logoutNode = document.createTextNode("Logout");
+// // Append the text node to the newly created list node (<li>).
+// newLi.appendChild(logoutNode);
 
-// Use the firstElementChild and the lastElementChild properties to retrieve the first and last <li> elements from their parent element (<ul>). Display the text of each link. (Hint: use the textContent property).
+// // Finally, append this updated list node to the unordered list (<ul>), using the appendChild method.
+// let ul = document.querySelector("div ul");
+// ul.appendChild(newLi);
 
+// // Use the firstElementChild and the lastElementChild properties to retrieve the first and last <li> elements from their parent element (<ul>). Display the text of each link. (Hint: use the textContent property).
+// console.log(ul.firstElementChild.textContent);
+// console.log(ul.lastElementChild.textContent);
 
 // Exercise 4 : My Book List
 // Instructions
