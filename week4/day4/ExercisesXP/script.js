@@ -69,93 +69,76 @@
 // console.log(ul.firstElementChild.textContent);
 // console.log(ul.lastElementChild.textContent);
 
+
+
+
 // Exercise 4 : My Book List
 // Instructions
 // Take a look at this link for help.
 
 // The point of this challenge is to display a list of two books on your browser.
 
-// In the body of the HTML page, create an empty div:
-// <div class="listBooks"></div>
 // In the js file, create an array called allBooks. This is an array of objects. Each object is a book that has 4 keys (ie. 4 properties) :
-// title,
-// author,
-// image : a url,
-// alreadyRead : which is a boolean (true or false).
+const allBooks = [
+    {title: "Crazy Rich Asians", author: "Kevin Kwan", image: "https://m.media-amazon.com/images/I/41Jlnc1LTQL._SY445_SX342_.jpg", alreadyRead: true},
+    {title: "Rich People Problems", author: "Kevin Kwan", image: "https://m.media-amazon.com/images/I/71B9B5pqnML._SY342_.jpg", alreadyRead: false}
+];
 
 // Initiate the array with 2 books of your choice (ie. Add manually 2 books objects in the array)
+
 // Requirements : All the instructions below need to be coded in the js file:
 // Using the DOM, render the books inside an HTML table (the HTML table must be added to the <div> created in part 1).
+const table = document.createElement("table");
+
+const tableRow1 = document.createElement("tr");
+const title1 = document.createElement("td");
+const author1 = document.createElement("td");
+const imgCel1 = document.createElement("td");
+const img1 = document.createElement("img");
+
+const tableRow2 = document.createElement("tr");
+const title2 = document.createElement("td");
+const author2 = document.createElement("td");
+const imgCel2 = document.createElement("td");
+const img2 = document.createElement("img");
+
 // For each book :
 // You have to display the book’s title and the book’s author.
 // Example: HarryPotter written by JKRolling.
 // The width of the image has to be set to 100px.
+title1.innerText = allBooks[0].title;
+author1.innerText = allBooks[0].author;
+img1.setAttribute("src", allBooks[0].image);
+img1.setAttribute("width", "100px");
+
+title2.innerText = allBooks[1].title;
+author2.innerText = allBooks[1].author;
+img2.setAttribute("src", allBooks[1].image);
+img2.setAttribute("width", "100px");
+
+tableRow1.appendChild(title1);
+tableRow1.appendChild(author1);
+imgCel1.appendChild(img1);
+tableRow1.appendChild(imgCel1);
+table.appendChild(tableRow1);
+
+tableRow2.appendChild(title2);
+tableRow2.appendChild(author2);
+imgCel2.appendChild(img2);
+tableRow2.appendChild(imgCel2);
+table.appendChild(tableRow2);
+
+document.querySelector("div").appendChild(table);
+
 // If the book is already read. Set the color of the book’s details to red.
-
-
-
-
-
-// //const allBooks = [];
-// // é uma array de objetos, então sabem que dentro vai ter objetos, cada um com 4 keys...
-// //
-
-// const allBooks = [
-//     {
-//         title: "HP1",
-//         author: "JK",
-//         image: "" 
-//         alreadyRead: true,
-//     },
-//     {
-//         title: "HP2",
-//         author: "JK",
-//         image: ""
-//         alreadyRead: false,
-//     }
-// ]; 
-
-// const container = document.querySelector(".listBooks");
-// const table = document.createElement("table");
-// const tr=document.createElement("tr");
-// const th1=document.createElement("th");
-// const th2=document.createElement("th");
-// const th3=document.createElement("th");
-// container.append(table);
-// table.append(tr);
-
-// th1.innerText="Title";
-// th2.innerText="Author";
-// th3.innerText="image"
-
-// // for (let book of allBooks){
-// //     console.log(element);
-// // }
-// // // o i de baixo é o indixe... eu to usando todos os objetos que tem na array
-// // for(let i=0; i < allBooks.length; i++){
-// //     console.log(allBooks[i]);
-// // }
-
-// //criando uma row
-// for (let element of allBooks) {
-//     const bookTr=document.createElement("tr");
-//     const td1=document.createElement("td");
-//     const td2=document.createElement("td");
-//     const td3=document.createElement("td");
-//     const img=document.createElement("img");
-
-//     td1.innerText=element.title;
-//     td2.innerText=element.author;
-//     //td3.innerHTML  pq é uma imagem, ai pode ser link...
-//     // ele preferiu fazer da maneira abaixo: criou a const img lá de cima antes
-//     img.setAttribute("src", element.image)
-//         img.style.width = "100px";
-//     td3.append(img)
-//     bookTr.append(td1, td2, td3);
-//     table.append(bookTr);    
-//     if (element.alreadyRead == true){
-//         bookTr.style.color="red"
-        
-//     }
-
-// }
+for(let i=0; i<= 1; i++){
+    if(allBooks[i].alreadyRead == true){
+        if(i==0){
+            title1.style.color = "red";
+            author1.style.color = "red";
+        }else if(i==1){
+            title2.style.color = "red";
+            author2.style.color = "red";
+        }
+    }
+}
