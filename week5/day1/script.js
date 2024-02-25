@@ -50,3 +50,22 @@
 // }
 
 // Zvi disse que é sempre bom procurar outra maneira de fazer as coisas...
+
+
+//----------------------------------------
+
+// voltando dia 25/02 e refazendo
+
+let begRow = 3;
+
+function insertRow(){    
+    let td1 = document.createElement("td");
+    let td2 = document.createElement("td");
+    let newRow = document.createElement("tr");
+    td1.textContent = `Row ${begRow} cell1`;
+    td2.textContent = `Row ${begRow} cell2`;
+    newRow.appendChild(td1);
+    newRow.appendChild(td2);
+    document.querySelector("table").appendChild(newRow);
+    begRow++
+}
