@@ -1,54 +1,54 @@
 // Exercise 1 : Change The Article
 
-// Using a DOM property, retrieve the h1 and console.log it.
-const heading = document.querySelector('h1');
-// or it supposed to be the textContent?
-console.log(heading);
+// // Using a DOM property, retrieve the h1 and console.log it.
+// const heading = document.querySelector('h1');
+// // or it supposed to be the textContent?
+// console.log(heading);
 
-// Using DOM methods, remove the last paragraph in the <article> tag.
-const lastP = document.querySelector('article p:last-child');
-lastP.remove();
+// // Using DOM methods, remove the last paragraph in the <article> tag.
+// const lastP = document.querySelector('article p:last-child');
+// lastP.remove();
 
-// Add a event listener which will change the background color of the h2 to red, when it’s clicked on.
-const secondHeading = document.querySelector('h2');
-secondHeading.addEventListener('click', changeColor);
+// // Add a event listener which will change the background color of the h2 to red, when it’s clicked on.
+// const secondHeading = document.querySelector('h2');
+// secondHeading.addEventListener('click', changeColor);
 
-function changeColor(e){
-    e.preventDefault();
-    secondHeading.style.backgroundColor = "red";
-}
+// function changeColor(e){
+//     e.preventDefault();
+//     secondHeading.style.backgroundColor = "red";
+// }
 
-// Add an event listener which will hide the h3 when it’s clicked on (use the display:none property).
-const thirdHeading = document.querySelector('h3');
-thirdHeading.addEventListener('click', hideIt);
+// // Add an event listener which will hide the h3 when it’s clicked on (use the display:none property).
+// const thirdHeading = document.querySelector('h3');
+// thirdHeading.addEventListener('click', hideIt);
 
-function hideIt(e){
-    e.preventDefault();
-    thirdHeading.style.display = 'none';
-}
+// function hideIt(e){
+//     e.preventDefault();
+//     thirdHeading.style.display = 'none';
+// }
 
-// Add a <button> to the HTML file, that when clicked on, should make the text of all the paragraphs, bold.
-const button = document.createElement('button');
-button.innerText = "Bold"
-const article = document.querySelector('article');
+// // Add a <button> to the HTML file, that when clicked on, should make the text of all the paragraphs, bold.
+// const button = document.createElement('button');
+// button.innerText = "Bold"
+// const article = document.querySelector('article');
 
-article.appendChild(button);
+// article.appendChild(button);
 
-button.addEventListener('click', boldAll);
+// button.addEventListener('click', boldAll);
 
-function boldAll(e){
-    e.preventDefault();
-    article.style.fontWeight = 'bold';
-}
+// function boldAll(e){
+//     e.preventDefault();
+//     article.style.fontWeight = 'bold';
+// }
 
-// BONUS : When you hover on the h1, set the font size to a random pixel size between 0 to 100.
-heading.addEventListener('mouseover', sizeChange);
+// // BONUS : When you hover on the h1, set the font size to a random pixel size between 0 to 100.
+// heading.addEventListener('mouseover', sizeChange);
 
-function sizeChange(e){
-    e.preventDefault();
-    const sizeRandom = Math.floor(Math.random() * 101);
-    heading.style.fontSize = sizeRandom + 'px';
-}
+// function sizeChange(e){
+//     e.preventDefault();
+//     const sizeRandom = Math.floor(Math.random() * 101);
+//     heading.style.fontSize = sizeRandom + 'px';
+// }
 
 
 // BONUS : When you hover on the 2nd paragraph, it should fade out (Check out “fade css animation” on Google)
@@ -66,27 +66,52 @@ function sizeChange(e){
 
 // 🌟 Exercise 2 : Work With Forms
 // Instructions
-
-
-
 // Retrieve the form and console.log it.
+const form = document.querySelector('form');
+console.log(form);
 
 // Retrieve the inputs by their id and console.log them.
+const fname = document.getElementById('fname');
+const lname = document.getElementById('lname');
+const submit = document.getElementById('submit');
+
+console.log(fname);
+console.log(lname);
+console.log(submit);
 
 // Retrieve the inputs by their name attribute and console.log them.
+const inputFirst = document.querySelector('input[name="firstname"]');
+const inputLast = document.querySelector('input[name="lastname"]');
+
+console.log(inputFirst + inputLast);
+
 
 // When the user submits the form (ie. submit event listener)
 // use event.preventDefault(), why ?
+// to prevent the page to refresh at click
+
 // get the values of the input tags,
 // make sure that they are not empty,
-// create an li per input value,
-// then append them to a the <ul class="usersAnswer"></ul>, below the form.
-// The output should be :
+submit.addEventListener('click', getValues);
 
-// <ul class="usersAnswer">
-//     <li>first name of the user</li>
-//     <li>last name of the user</li>
-// </ul>
+function getValues(e){
+    e.preventDefault();
+    if(fname.value.trim() !== '' && lname.value.trim() !== ''){ 
+       const li1 = document.createElement('li');
+       const li2 = document.createElement('li');
+       const ul = document.createElement('ul.userAnsewer');
+
+       li1.textContent = fname.value.trim();
+       li2.textContent = lname.value.trim();
+
+       ul.appendChild(li1);
+       ul.appendChild(li2);
+       document.body.appendChild(ul);
+    } else {
+        alert("You can't have an empty value!")
+    }
+}
+
 
 
 // 🌟 Exercise 3 : Transform The Sentence
