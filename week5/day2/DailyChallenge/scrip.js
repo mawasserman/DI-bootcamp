@@ -10,41 +10,26 @@
 // Make sure the values are not empty
 // Write a story that uses each of the values.
 // Make sure you check the console for errors when playing the game.
-// Bonus: Add a “shuffle” button to the HTML file, when clicked the button should change the story currently displayed (but keep the values entered by the user). The user could click the button at least three times and get a new story. Display the stories randomly.
+// // Bonus: Add a “shuffle” button to the HTML file, when clicked the button should change the story currently displayed (but keep the values entered by the user). The user could click the button at least three times and get a new story. Display the stories randomly.
 
-//CHAT GPT
-document.addEventListener('DOMContentLoaded', function() {
-    const form = document.getElementById('libform');
-    const storySpan = document.getElementById('story');
-    const shuffleButton = document.getElementById('shuffle-button');
 
-    form.addEventListener('submit', function(event) {
-        event.preventDefault();
+const form = document.getElementById("libform");
+const libbutton = document.getElementById("libbutton");
+const generatedSto = document.getElementById("story");
 
-        const noun = document.getElementById('noun').value.trim();
-        const adjective = document.getElementById('adjective').value.trim();
-        const person = document.getElementById('person').value.trim();
-        const verb = document.getElementById('verb').value.trim();
-        const place = document.getElementById('place').value.trim();
+//the story was taken from ChatGPT, but all the code is mine
+libbutton.addEventListener('click', generateStory);
 
-        if (noun && adjective && person && verb && place) {
-            const story = `Once upon a time, ${person} went to ${place} carrying a ${adjective} ${noun}. Suddenly, they started to ${verb} and everyone around was amazed!`;
-            storySpan.textContent = story;
-        } else {
-            console.log('Please fill in all the inputs!');
-        }
-    });
+function generateStory(event) {
+    event.preventDefault();
 
-    shuffleButton.addEventListener('click', function() {
-        const stories = [
-            // List of different stories you want to display
-            // You can modify or add more stories here
-            "Story 1",
-            "Story 2",
-            "Story 3"
-        ];
+    const noun = document.getElementById("noun").value.trim();
+    const adjective = document.getElementById("adjective").value.trim();
+    const person = document.getElementById("person").value.trim();
+    const verb = document.getElementById("verb").value.trim();
+    const place = document.getElementById("place").value.trim();
 
-        const randomIndex = Math.floor(Math.random() * stories.length);
-        storySpan.textContent = stories[randomIndex];
-    });
-});
+    generatedSto.textContent = `Once upon a time, in a far-off land, there lived a ${adjective} ${person}. This ${person} was known throughout the kingdom for their ${verb}ing skills. Every day, they would ${verb} at ${place}, spreading joy and laughter wherever they went. One day, while ${verb}ing in ${place}, they stumbled upon a mysterious ${noun}. Curious and intrigued, they decided to investigate. Little did they know, this ${noun} held the key to unlocking a great adventure. With determination in their heart, they embarked on a journey to uncover the secrets of the ${noun} and save the kingdom from impending doom.`;
+}
+
+
