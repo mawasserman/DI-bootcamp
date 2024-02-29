@@ -65,101 +65,111 @@
 
 
 // 🌟 Exercise 2 : Work With Forms
-// Instructions
-// Retrieve the form and console.log it.
-const form = document.querySelector('form');
-console.log(form);
+// // Instructions
+// // Retrieve the form and console.log it.
+// const form = document.querySelector('form');
+// console.log(form);
 
-// Retrieve the inputs by their id and console.log them.
-const fname = document.getElementById('fname');
-const lname = document.getElementById('lname');
-const submit = document.getElementById('submit');
+// // Retrieve the inputs by their id and console.log them.
+// const fname = document.getElementById('fname');
+// const lname = document.getElementById('lname');
+// const submit = document.getElementById('submit');
 
-console.log(fname);
-console.log(lname);
-console.log(submit);
+// console.log(fname);
+// console.log(lname);
+// console.log(submit);
 
-// Retrieve the inputs by their name attribute and console.log them.
-const inputFirst = document.querySelector('input[name="firstname"]');
-const inputLast = document.querySelector('input[name="lastname"]');
+// // Retrieve the inputs by their name attribute and console.log them.
+// const inputFirst = document.querySelector('input[name="firstname"]');
+// const inputLast = document.querySelector('input[name="lastname"]');
 
-console.log(inputFirst + inputLast);
+// console.log(inputFirst + inputLast);
 
 
-// When the user submits the form (ie. submit event listener)
-// use event.preventDefault(), why ?
-// to prevent the page to refresh at click
+// // When the user submits the form (ie. submit event listener)
+// // use event.preventDefault(), why ?
+// // to prevent the page to refresh at click
 
-// get the values of the input tags,
-// make sure that they are not empty,
-submit.addEventListener('click', getValues);
+// // get the values of the input tags,
+// // make sure that they are not empty,
+// submit.addEventListener('click', getValues);
 
-function getValues(e){
-    e.preventDefault();
-    if(fname.value.trim() !== '' && lname.value.trim() !== ''){ 
-       const li1 = document.createElement('li');
-       const li2 = document.createElement('li');
-       const ul = document.createElement('ul.userAnsewer');
+// function getValues(e){
+//     e.preventDefault();
+//     if(fname.value.trim() !== '' && lname.value.trim() !== ''){ 
+//        const li1 = document.createElement('li');
+//        const li2 = document.createElement('li');
+//        const ul = document.createElement('ul.userAnsewer');
 
-       li1.textContent = fname.value.trim();
-       li2.textContent = lname.value.trim();
+//        li1.textContent = fname.value.trim();
+//        li2.textContent = lname.value.trim();
 
-       ul.appendChild(li1);
-       ul.appendChild(li2);
-       document.body.appendChild(ul);
-    } else {
-        alert("You can't have an empty value!")
-    }
-}
+//        ul.appendChild(li1);
+//        ul.appendChild(li2);
+//        document.body.appendChild(ul);
+//     } else {
+//         alert("You can't have an empty value!")
+//     }
+// }
 
 
 
 // 🌟 Exercise 3 : Transform The Sentence
-// Instructions
-// Add this sentence to your HTML file then follow the steps :
 
-// <p><strong>Hello</strong> I hope you are enjoying <strong>this</strong> class. At the
-// <strong>end</strong> you <strong>will</strong> be great Developers!
-// <strong>Enjoy</strong> the <strong>JavaScript </strong> lessons</p>
+// // In the JS file:
 
+// // Declare a global variable named allBoldItems.
+// const allBoldItems = [];
 
-// In the JS file:
+// // Create a function called getBoldItems() that takes no parameter. This function should collect all the bold items inside the paragraph and assign them to the allBoldItems variable.
+// const strongItem = document.querySelectorAll('strong');
 
-// Declare a global variable named allBoldItems.
+// function getBoldItems(){
+//     for(let i = 0; i < strongItem.length; i++){
+//         const item = strongItem[i];
+//         allBoldItems.push(item.textContent);
+//     }
+//     console.log(allBoldItems);
+// }
 
-// Create a function called getBoldItems() that takes no parameter. This function should collect all the bold items inside the paragraph and assign them to the allBoldItems variable.
+// // Create a function called highlight() that changes the color of all the bold text to blue.
+// function highlight(){
+//     for(let i = 0; i < strongItem.length; i++){
+//         const item = strongItem[i];
+//         item.style.color = 'blue';
+//     }
+// }
 
-// Create a function called highlight() that changes the color of all the bold text to blue.
+// // Create a function called returnItemsToDefault() that changes the color of all the bold text back to black.
+// function returnItemsToDefault(){
+//     for(let i = 0; i < strongItem.length; i++){
+//         const item = strongItem[i];
+//         item.style.color = 'black';
+//     } 
+// }
 
-// Create a function called returnItemsToDefault() that changes the color of all the bold text back to black.
+// // Call the function highlight() on mouseover (ie. when the mouse pointer is moved onto the paragraph)
+// const paragraph = document.querySelector('p');
+// paragraph.addEventListener('mouseover', highlight);
 
-// Call the function highlight() on mouseover (ie. when the mouse pointer is moved onto the paragraph), and the function returnItemsToDefault() on mouseout (ie. when the mouse pointer is moved out of the paragraph). Look at this example
-
+// // and the function returnItemsToDefault() on mouseout (ie. when the mouse pointer is moved out of the paragraph). Look at this example
+// paragraph.addEventListener('mouseout', returnItemsToDefault);
 
 // 🌟 Exercice 4 : Volume Of A Sphere
 // Instructions
-// Write a JavaScript program to calculate the volume of a sphere. Use the code below as a base:
-// <!doctype html> 
-// <html lang="en"> 
-//     <head> 
-//         <meta charset="utf-8"> 
-//         <title>Volume of a Sphere</title> 
-//         <style>  
-//             body {
-//                 padding-top:30px;
-//             } 
+// Write a JavaScript program to calculate the volume of a sphere.
+const radius = document.getElementById('radius');
+const volume = document.getElementById('volume');
+const submit = document.getElementById('submit');
 
-//             label,input {
-//                 display:block;
-//             }  
-//         </style> 
-//     </head> 
-//     <body> 
-//         <p>Input radius value and get the volume of a sphere.</p> 
-//         <form  id="MyForm"> 
-//             <label for="radius">Radius</label><input type="text" name="radius" id="radius" required> 
-//             <label for="volume">Volume</label><input type="text" name="volume" id="volume"> 
-//             <input type="submit" value="Calculate" id="submit">    
-//         </form> 
-//     </body> 
-// </html> 
+submit.addEventListener("click", calculateVolume);
+
+function calculateVolume(e){
+    e.preventDefault();
+    const radiusNum = Number(radius.value)
+    volume.value = (4/3 * (Math.PI * Math.pow(radiusNum, 3)));
+}
+
+
+    
+
