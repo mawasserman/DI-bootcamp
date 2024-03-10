@@ -5,8 +5,11 @@ Week 4
 	day 4
 		XP - https://github.com/mawasserman/DI-bootcamp/tree/52b95149834b27b9b52c3a514ee2970caf9babd3/week4/day4/ExercisesXP
 		daily - https://github.com/mawasserman/DI-bootcamp/tree/main/week4/day4/DailyChallenge
-	day 5 
-		XP - 
+	day 5
+------->XP - 
 		daily - https://github.com/mawasserman/DI-bootcamp/commit/a854ec9977e19ee5e58802598a44bc7ba1eb310f#diff-30d19f160f1eba8433d27640f778735ae6d7d45d84f166193110cbda4d78ed3c
 		mini project - 
 Week 5
+	day 2
+		XP - https://github.com/mawasserman/DI-bootcamp/tree/main/week5/day2/ExercisesXP
+		daily - https://github.com/mawasserman/DI-bootcamp/tree/main/week5/day2/DailyChallenge
