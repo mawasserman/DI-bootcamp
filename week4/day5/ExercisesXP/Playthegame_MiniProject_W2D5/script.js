@@ -20,10 +20,11 @@ function playTheGame(){
             alert('Sorry Not a number, Goodbye');
         }else if(userNumber > 10){
               // If the user didn’t enter a number between 0 and 10 alert “Sorry it’s not a good number, Goodbye”.
-              alert('Sorry it’s not a good number, Goodbye');
+              alert("Sorry it’s not a good number, Goodbye");
         }else{
             // Else (ie. he entered a number between 0 and 10), create a variable named computerNumber where the value is a random number between 0 and 10 (Hint: Use the built-in Math.random() function). Make sure that the number is rounded.
             const computerNumber = Math.floor(Math.random()*11);
+            compareNumbers(userNumber, computerNumber);
         }       
     }
 }
@@ -33,23 +34,27 @@ function playTheGame(){
 function compareNumbers(userNumber, computerNumber){
     // The point of this function is to check if the userNumber is the same as the computerNumber:
     // If userNumber is equal to computerNumber, alert “WINNER” and stop the game.
-    if( userNumber === compareNumbers){
+    if( userNumber === computerNumber){
         alert('WINNER');
     }// If userNumber is bigger than computerNumber, alert “Your number is bigger then the computer’s, guess again” (Hint: use the built-in prompt() function to ask the user for a new number).
     else if( userNumber > computerNumber){
         alert("Your number is bigger then the computer’s, guess again");
+        const newNumber = prompt("Take another guess...");
+        userNumber = Number(newNumber);
+        compareNumbers(userNumber, computerNumber); 
         //  (Hint: use the built-in prompt() function to ask the user for a new number).
-
+    }// If userNumber is lower than computerNumber, alert “Your number is smaller then the computer’s, guess again” (Hint: use the built-in prompt() function to ask the user for a new number).
+    else{
+        alert("Your number is smaller then the computer’s, guess again");
+        const newNumber = prompt("Take another guess...");
+        userNumber = Number(newNumber);
+        compareNumbers(userNumber, computerNumber); 
     }
-
-    
-    // If userNumber is lower than computerNumber, alert “Your number is smaller then the computer’s, guess again” (Hint: use the built-in prompt() function to ask the user for a new number).
 }
 
-
-
 // If the user guessed more than 3 times, alert “out of chances” and exit the function.
+//I wasn't able to do this last part
 
 
-// Bonus
-// In the First Part, instead of stopping the process if the user didn’t enter a valid number. Continue asking for a number until the user enters a valid number.
+// // Bonus
+// // In the First Part, instead of stopping the process if the user didn’t enter a valid number. Continue asking for a number until the user enters a valid number.
